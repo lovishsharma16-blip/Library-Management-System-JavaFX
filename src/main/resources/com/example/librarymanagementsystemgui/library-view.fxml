@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.librarymanagementsystemgui.LibraryController"
+      alignment="TOP_CENTER"
+      spacing="15">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="LIBRARY MANAGEMENT SYSTEM"
+           style="-fx-font-size:28px; -fx-font-weight:bold;"/>
+
+    <GridPane hgap="10" vgap="10">
+
+        <Label text="Book ID"/>
+        <TextField fx:id="bookIdField" promptText="Book ID" GridPane.columnIndex="1"/>
+
+        <Label text="Title" GridPane.rowIndex="1"/>
+        <TextField fx:id="titleField" promptText="Title"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="1"/>
+
+        <Label text="Author" GridPane.rowIndex="2"/>
+        <TextField fx:id="authorField" promptText="Author"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="2"/>
+
+        <Label text="Price" GridPane.rowIndex="3"/>
+        <TextField fx:id="priceField" promptText="Price"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="3"/>
+
+        <Label text="Category" GridPane.rowIndex="4"/>
+        <TextField fx:id="categoryField" promptText="Category"
+                   GridPane.columnIndex="1"
+                   GridPane.rowIndex="4"/>
+
+    </GridPane>
+
+    <HBox spacing="10" alignment="CENTER">
+
+        <Button text="Add Book"
+                prefWidth="120"
+                onAction="#addBook"/>
+
+        <Button text="Search Book"
+                prefWidth="120"
+                onAction="#searchBook"/>
+
+        <Button text="Delete Book"
+                prefWidth="120"
+                onAction="#deleteBook"/>
+        <Button text="Issue Book"
+                prefWidth="120"
+                onAction="#issueBook"/>
+
+        <Button text="Return Book"
+                prefWidth="120"
+                onAction="#returnBook"/>
+
+
+    </HBox>
+
+    <TableView fx:id="bookTable" prefHeight="250">
+
+        <columns>
+
+            <TableColumn fx:id="idColumn"
+                         text="ID"
+                         prefWidth="70"/>
+
+            <TableColumn fx:id="titleColumn"
+                         text="Title"
+                         prefWidth="160"/>
+
+            <TableColumn fx:id="authorColumn"
+                         text="Author"
+                         prefWidth="150"/>
+
+            <TableColumn fx:id="priceColumn"
+                         text="Price"
+                         prefWidth="90"/>
+
+            <TableColumn fx:id="categoryColumn"
+                         text="Category"
+                         prefWidth="120"/>
+            <TableColumn fx:id="statusColumn"
+                         text="Status"
+                         prefWidth="120"/>
+            <TableColumn fx:id="issueDateColumn"
+                         text="Issue Date"
+                         prefWidth="120"/>
+
+            <TableColumn fx:id="returnDateColumn"
+                         text="Return Date"
+                         prefWidth="120"/>
+
+        </columns>
+
+    </TableView>
+
+    <Label fx:id="totalBooksLabel"
+           text="Total Books : 0"
+           style="-fx-font-size:16; -fx-font-weight:bold;"/>
+
+</VBox>

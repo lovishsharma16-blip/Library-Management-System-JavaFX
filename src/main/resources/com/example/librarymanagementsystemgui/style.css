@@ -1,0 +1,61 @@
+.root{
+    -fx-background-color:#f4f7fb;
+    -fx-font-family:"Segoe UI";
+}
+
+.label{
+    -fx-font-size:15px;
+}
+
+.button{
+
+    -fx-background-color:#1565C0;
+    -fx-text-fill:white;
+    -fx-font-size:14px;
+    -fx-font-weight:bold;
+    -fx-background-radius:8;
+    -fx-cursor:hand;
+    -fx-padding:8 18 8 18;
+
+}
+
+.button:hover{
+
+    -fx-background-color:#0D47A1;
+
+}
+
+.text-field{
+
+    -fx-background-radius:8;
+    -fx-border-radius:8;
+    -fx-font-size:14px;
+
+}
+
+.table-view{
+
+    -fx-background-radius:10;
+
+}
+
+.table-view .column-header{
+
+    -fx-background-color:#1565C0;
+
+}
+
+.table-view .column-header .label{
+
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+
+}
+
+#totalBooksLabel{
+
+    -fx-font-size:16px;
+    -fx-font-weight:bold;
+    -fx-text-fill:#1565C0;
+
+}
