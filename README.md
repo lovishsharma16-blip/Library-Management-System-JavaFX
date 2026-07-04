@@ -53,7 +53,34 @@ src/
 │           ├── library-view.fxml
 │           └── style.css
 ```
+## 📸 Application Preview
 
+### 1. Home Screen
+![Home](screenshots/home.png)
+
+### 2. Add Book Confirmation
+![Add Confirmation](screenshots/add-confirm.png)
+
+### 3. Book Added Successfully
+![Book Added](screenshots/add-success.png)
+
+### 4. Issue Book Confirmation
+![Issue Confirmation](screenshots/issue-confirm.png)
+
+### 5. Book Issued Successfully
+![Book Issued](screenshots/issue-success.png)
+
+### 6. Return Book Confirmation
+![Return Confirmation](screenshots/return-confirm.png)
+
+### 7. Book Returned Successfully
+![Book Returned](screenshots/return-success.png)
+
+### 8. Delete Book Confirmation
+![Delete Confirmation](screenshots/delete-confirm.png)
+
+### 9. Book Deleted Successfully
+![Book Deleted](screenshots/delete-success.png)
 ---
 
 ## ▶️ How to Run
